@@ -20,6 +20,19 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<repositories>
+		<repository>
+			<id>javanto-releases</id>
+			<url>https://raw.github.com/javanto/repository/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- QuickFIX/J dependencies -->
@@ -90,6 +103,13 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>10.0</version>
+			</dependency>
+
+			<!-- redis client -->
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>2.2.1</version>
 			</dependency>
 
 		</dependencies>
