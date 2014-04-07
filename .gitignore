@@ -1,0 +1,12 @@
+.project
+.classpath
+.settings/
+.groovy/
+
+bin/
+target/
+
+release.properties
+pom.xml.*
+
+*.pdf
